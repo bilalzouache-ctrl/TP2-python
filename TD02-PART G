@@ -1,0 +1,15 @@
+# Partie G — Préparation de la remise
+
+Avant de remettre le travail, vérifier les points suivants :
+
+1. Le projet Java est présent dans le dépôt GitHub.
+2. Les classes Java nécessaires sont ajoutées.
+3. Les tests sont présents et exécutés.
+4. Les commits décrivent les modifications réalisées.
+5. La branche principale contient la version finale.
+6. Le tag demandé est présent si le TP l'exige.
+7. Le lien GitHub du projet est accessible à l'enseignante.
+
+## Conclusion
+
+L'utilisation de Git permet de suivre les modifications, de conserver l'historique du projet, de travailler avec des branches et de partager le code avec les membres du groupe.
