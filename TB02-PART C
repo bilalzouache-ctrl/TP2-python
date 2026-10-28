@@ -1,0 +1,46 @@
+# Partie C — Développement de l'application Java
+
+## 1. Classes à développer
+
+L'application de gestion d'une bibliothèque contient les classes suivantes :
+
+* **Book :** représente un livre avec son identifiant, son titre et son auteur.
+* **Copy :** représente un exemplaire physique d'un livre.
+* **Member :** représente un membre de la bibliothèque.
+* **Loan :** représente un emprunt et sa date de retour prévue.
+* **Library :** gère les livres, les exemplaires, les membres et les emprunts.
+
+## 2. Règles de gestion
+
+1. La durée d'un emprunt est de 14 jours.
+2. Un membre ne peut pas avoir plus de 5 emprunts ouverts simultanément.
+3. Un exemplaire déjà emprunté ne peut pas être prêté à un autre membre avant son retour.
+
+## 3. Tests
+
+La classe `LibraryTest` doit vérifier les fonctionnalités principales :
+
+* Ajouter un livre et ses exemplaires.
+* Enregistrer un membre.
+* Emprunter un exemplaire disponible.
+* Refuser un emprunt lorsque la limite est atteinte.
+* Retourner un exemplaire.
+* Rechercher des livres par titre.
+
+## 4. Vérification et historique Git
+
+```bash
+mvn test
+git status
+git log --oneline
+```
+
+## 5. Restauration d'un fichier
+
+Pour annuler les modifications non validées d'un fichier :
+
+```bash
+git restore nom_du_fichier
+```
+
+**Remarque :** Les classes Java et les tests doivent être créés dans les dossiers source du projet Maven. Ce document décrit le travail, mais ne remplace pas leur code source.
