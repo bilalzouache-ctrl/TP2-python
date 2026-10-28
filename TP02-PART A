@@ -1,0 +1,21 @@
+# Partie A — Configuration de Git
+
+## 1. Configuration du nom d'utilisateur
+
+```bash
+git config --global user.name "Votre Nom"
+```
+
+## 2. Configuration de l'adresse e-mail
+
+```bash
+git config --global user.email "votre.email@example.com"
+```
+
+## 3. Vérification de la configuration
+
+```bash
+git config --global --list
+```
+
+**Objectif :** Configurer l'identité de l'utilisateur pour enregistrer correctement les commits Git.
