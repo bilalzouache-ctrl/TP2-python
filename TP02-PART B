@@ -1,0 +1,58 @@
+# Partie B — Création du projet Maven
+
+## 1. Création du projet
+
+Le projet s'appelle `tp2-library`.
+
+```bash
+mvn archetype:generate -DgroupId=com.example.library -DartifactId=tp2-library -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```
+
+## 2. Accéder au dossier
+
+```bash
+cd tp2-library
+```
+
+## 3. Initialisation du dépôt Git
+
+```bash
+git init
+```
+
+## 4. Création du fichier .gitignore
+
+Le fichier `.gitignore` permet d'ignorer les fichiers générés automatiquement.
+
+```gitignore
+target/
+*.class
+.idea/
+.vscode/
+```
+
+## 5. Ajouter le projet et effectuer le premier commit
+
+```bash
+git add .
+git status
+git commit -m "Initial commit: create Maven project"
+```
+
+## 6. Création du fichier README.md
+
+Le fichier README présente le projet, son objectif et les instructions pour l'exécuter.
+
+```markdown
+# TP2 - Library Application
+
+Application Java de gestion d'une bibliothèque.
+
+## Technologies
+- Java
+- Maven
+- Git
+
+## Objectif
+Gérer les livres, les exemplaires, les membres et les emprunts.
+```
