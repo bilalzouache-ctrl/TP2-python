@@ -1,0 +1,38 @@
+# Partie E — Dépôt distant et travail en équipe
+
+## 1. Ajouter le dépôt distant
+
+Remplacer l'adresse ci-dessous par l'URL réelle du dépôt GitHub :
+
+```bash
+git remote add origin URL_DU_DEPOT
+```
+
+## 2. Vérifier le dépôt distant
+
+```bash
+git remote -v
+```
+
+## 3. Envoyer le projet sur GitHub
+
+```bash
+git push -u origin main
+```
+
+## 4. Créer le tag v1.0
+
+```bash
+git tag v1.0
+git push origin v1.0
+```
+
+## 5. Vérifier l'historique complet
+
+```bash
+git log --oneline --graph --all
+```
+
+## Conclusion
+
+Git permet de suivre les modifications du projet, de travailler avec des branches, de fusionner les changements et de partager le code avec les autres membres du groupe.
