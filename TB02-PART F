@@ -1,0 +1,46 @@
+# Partie F — Vérification finale du projet
+
+## 1. Vérifier l'état du dépôt
+
+```bash
+git status
+```
+
+Cette commande permet de vérifier les fichiers modifiés et les changements qui ne sont pas encore enregistrés.
+
+## 2. Exécuter les tests
+
+```bash
+mvn test
+```
+
+Cette commande compile le projet et exécute les tests configurés dans Maven.
+
+## 3. Vérifier l'historique
+
+```bash
+git log --oneline --graph --all
+```
+
+Cette commande affiche l'historique des commits et les relations entre les branches.
+
+## 4. Vérifier le dépôt distant
+
+```bash
+git remote -v
+git tag
+```
+
+La première commande affiche les dépôts distants configurés. La deuxième affiche les tags locaux.
+
+## 5. Envoyer les dernières modifications
+
+Si les tests réussissent et que des modifications restent à enregistrer :
+
+```bash
+git add .
+git commit -m "Finalize library application"
+git push
+```
+
+Si aucun changement n'a été effectué, il n'est pas nécessaire de créer un nouveau commit.
