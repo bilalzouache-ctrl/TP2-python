@@ -1,0 +1,74 @@
+# Partie D — Branches et fusion
+
+## 1. Création de la branche
+
+```bash
+git switch -c feature/search
+```
+
+Cette commande crée une branche appelée `feature/search` et bascule dessus.
+
+## 2. Recherche par titre
+
+Ajouter à la classe `Library` une méthode `searchByTitle` permettant de rechercher les livres à partir de leur titre.
+
+Après avoir modifié le code :
+
+```bash
+git add .
+git commit -m "Add book search by title"
+```
+
+## 3. Modification du README
+
+Modifier le fichier `README.md`, puis enregistrer les changements :
+
+```bash
+git add README.md
+git commit -m "Update README with search feature"
+```
+
+## 4. Fusion de la branche
+
+Revenir sur la branche principale :
+
+```bash
+git switch main
+```
+
+Fusionner la branche de recherche :
+
+```bash
+git merge feature/search
+```
+
+## 5. Résolution d'un conflit
+
+En cas de conflit, ouvrir le fichier concerné, choisir le contenu final et supprimer les marqueurs de conflit :
+
+```text
+<<<<<<< HEAD
+=======
+>>>>>>> feature/search
+```
+
+Puis terminer la fusion :
+
+```bash
+git add README.md
+git commit -m "Resolve merge conflict in README"
+```
+
+Si Git a déjà terminé la fusion automatiquement, il n'est pas nécessaire de créer un commit supplémentaire.
+
+## 6. Visualisation de l'historique
+
+```bash
+git log --oneline --graph --all
+```
+
+## 7. Suppression de la branche
+
+```bash
+git branch -d feature/search
+```
