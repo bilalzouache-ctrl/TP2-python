@@ -1,0 +1,55 @@
+@startuml
+
+!pragma layout smetana
+
+|Librarian|
+start
+:Select a member;
+
+|System|
+:Check borrowing rights;
+
+if (Rights accepted?) then (yes)
+
+  |Librarian|
+  :Select a copy;
+
+  repeat
+
+    |System|
+    :Check copy availability;
+
+    if (Copy available?) then (yes)
+
+      :Register the loan;
+      :Update copy status;
+
+    else (no)
+
+      if (Copy reserved for another member?) then (yes)
+        :Exception 5a - Reject selected copy;
+      else (no)
+        :Copy is unavailable;
+      endif
+
+    endif
+
+    |Librarian|
+    :Select another copy if needed;
+
+  repeat while (Another copy?) is (yes)
+  ->no;
+
+  :Give the copy to the member;
+
+else (no)
+
+  |System|
+  :Exception 3a - Rights refused;
+  :Display refusal reason;
+
+endif
+
+stop
+
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+
+title Register a Return - Activity Diagram
+
+|Member|
+start
+:Bring back the book copy;
+
+|Librarian|
+:Receive the returned copy;
+
+|System|
+:Retrieve loan information;
+:Close the loan;
+
+if (Return is late?) then (Yes)
+    :Suspend the member;
+else (No)
+    :Continue normal return;
+endif
+
+if (Book is reserved?) then (Yes)
+    :Keep the copy aside;
+    :Identify the member;
+    :Send notification;
+else (No)
+    :Make the copy available;
+endif
+
+|Librarian|
+:Complete the return operation;
+
+stop
+
+@enduml
